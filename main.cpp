@@ -1,23 +1,37 @@
 #include <iostream>
-#include <cmath>
 #include <iomanip>
 using namespace std;
 
 int main(){
 
-    // Number of students in a class based on gender.
-    // Change values if needed (only change male and female variables)
+    //variables
 
-    double males = 35,
-        females = 23,
-        total = males + females,
-        percentageMales = (float)males / (float)total * 100, 
-        percentageFemales = (float)females / (float)total * 100;
+    double  percentageMales,
+            percentageFemales;
+
+    int males,
+        females,
+        total;
+
+    // input/Output 
 
     cout << "Welcome to my program.\n";
+
+    cout << "Males?\n";
+    cin >> males;
+
+    cout << "Females?\n";
+    cin >> females;
+
+        total = males + females;
+
+
+        percentageMales = static_cast<float>(males)/ total * 100, 
+        percentageFemales = static_cast<float>(females)/ total * 100;
+
     
-    cout << setprecision(4) << percentageMales  << '%' << endl;
-    cout << setprecision(4) << percentageFemales  << '%' << endl;
+    cout << setprecision(4) << "Percentage of Males: " << percentageMales  << '%' << endl;
+    cout << setprecision(4) << "Percentage of Females: " << percentageFemales  << '%' << endl;
 
     return 0;
 }
