@@ -33,5 +33,7 @@ int main(){
     cout << setprecision(4) << "Percentage of Males: " << percentageMales  << '%' << endl;
     cout << setprecision(4) << "Percentage of Females: " << percentageFemales  << '%' << endl;
 
+    system("pause");
+
     return 0;
 }
